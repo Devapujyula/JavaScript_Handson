@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript</title>
+  </head>
+  <body>
+    <h1>TypeSripter</h1>
+    <!--taking result-->
+    <input type="text" id="search" />
+    <!--to make result work-->
+    <button onclick="handleButtonClick()">Click</button>
+    <!--to show the result-->
+    <p id="result"></p>
+
+    <script>
+      function handleButtonClick() {
+        // console.log("Button Clicked.!");
+        let inputText = document.getElementById("search").value;
+        console.log(inputText);
+        document.getElementById("result").innerText =
+          "Result : " + inputText + " | Type: " + typeof inputText;
+      }
+    </script>
+  </body>
+</html>
